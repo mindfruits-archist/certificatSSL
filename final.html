@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        window.onload = function(){
+          $.get("departements.json", function(data){
+              console.log(data);
+          });
+        }
+    </script>
+    <div class="mainDiv" style="font-family: Raleway, sans-serif;text-align:center;margin: 10px auto;width: 95%;max-width: 700px;font-size: 18px;background-color:#f8f8f8;padding: 5% 5%; border:2px #f0efef solid;">
+      <img style="margin:auto;display: block;margin-bottom:30px;" src="https://www.mindfruits.biz/wp-content/uploads/2017/06/mindfruits.png">
+      {{content}}
+      <hr>
+      <p style="text-align:center;">Votre fidèle serviteur,<br>Google Apps Script</p>
+    </div>
+  </body>
+</html>
